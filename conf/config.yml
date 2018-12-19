@@ -1,0 +1,5 @@
+port: 8080
+
+googlecloud:
+  bucketname: files-fredliang
+  credentialspath: conf/google-cloud-storage.json
