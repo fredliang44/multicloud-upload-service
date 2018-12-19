@@ -23,10 +23,10 @@ func loadConfig() (conf config) {
 	dir, _ := os.Getwd()
 
 	err := configor.Load(&conf, dir+"/conf/config.yml")
-	if err!=nil {
+	if err != nil {
 		fmt.Println(err)
 	}
 
-	os.Setenv("GOOGLE_APPLICATION_CREDENTIALS", conf.GoogleCloud.CredentialsPath)
+	os.Setenv("GOOGLE_APPLICATION_CREDENTIALS", dir+conf.GoogleCloud.CredentialsPath)
 	return conf
 }
