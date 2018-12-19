@@ -15,7 +15,7 @@ type config struct {
 
 	GoogleCloud struct {
 		BucketName      string
-		CredentialsPath string `env:"GOOGLE_APPLICATION_CREDENTIALS"`
+		CredentialsPath string
 	}
 }
 
